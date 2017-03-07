@@ -19,7 +19,7 @@ module Bamboozled
       def find(employee_id, fields = nil)
         fields = all_fields if fields == :all
         fields = fields.join(',') if fields.is_a?(Array)
-
+        byebug
         request(:get, "employees/#{employee_id}?fields=#{fields}")
       end
 

@@ -19,3 +19,5 @@ group :development, :test do
   gem "pronto-reek", require: false
   gem "pronto-brakeman", require: false
 end
+
+gem 'byebug'
